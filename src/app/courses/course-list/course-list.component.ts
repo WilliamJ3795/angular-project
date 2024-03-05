@@ -12,11 +12,13 @@ import { Course } from '../course.model';
 export class CourseListComponent {
   courses: Course[] = [ 
     new Course('JavaScript', 
-    'Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is an essential part of web applications.', 
-    '/assets/javascript.jpg',0), 
+    'Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is an essential part of web applications.',
+    '/assets/javascript.jpg',0),
+
     new Course('Angular', 
     'A TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations', 
     '/assets/angular.jpg',1), 
+
     new Course('HTML', 
     'Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.', 
     '/assets/html.jpg',2), 
@@ -42,6 +44,7 @@ export class CourseListComponent {
     }
 
     selectedRow!: number;
+    searchText!: string; 
     setHoveredRow(index:number){ 
       this.selectedRow = index; 
       };
