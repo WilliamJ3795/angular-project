@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms'; 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
@@ -10,6 +10,8 @@ import { CourseListComponent } from './courses/course-list/course-list.component
 import { CourseStartComponent } from './courses/course-start/course-start.component';
 import { CourseItemComponent } from './courses/course-list/course-item/course-item.component';
 import { TruncatePipe } from './truncate.pipe';
+import { FilterPipe } from './filter.pipe';
+import { OrderByPipe } from './order-by.pipe';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,15 @@ import { TruncatePipe } from './truncate.pipe';
     CourseListComponent,
     CourseStartComponent,
     CourseItemComponent,
-    TruncatePipe
+    TruncatePipe,
+    FilterPipe,
+    OrderByPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

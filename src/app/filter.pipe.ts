@@ -4,10 +4,10 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'filter'
 })
 export class FilterPipe implements PipeTransform {
-  
-  transform(sourceList: {name:string, description:string, imagePath: string, 
-    id: number }[], 
-    searchText:string)
+  transform(
+    sourceList: {name:string, description:string, imagePath: string, 
+      id: number }[], 
+      searchText:string)
     {
       if (searchText === undefined || searchText.length == 0) { 
         //No search term 
