@@ -40,4 +40,9 @@ export class CourseListComponent {
   ngOnInit() { 
     this.getCourses(); 
     }
+
+    selectedRow!: number;
+    setHoveredRow(index:number){ 
+      this.selectedRow = index; 
+      };
 }
