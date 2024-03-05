@@ -2,6 +2,8 @@
 <hr> 
 <div class="row"> 
 <div class="col-xs-12"> 
-<app-course-item [course]="course"></app-course-item> 
+<app-course-item 
+*ngFor="let courseEl of courses; let i = index" 
+[course]="courseEl"></app-course-item> 
 </div> 
-</div>
+</div> 
