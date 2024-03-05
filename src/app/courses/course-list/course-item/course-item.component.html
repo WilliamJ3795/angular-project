@@ -1,7 +1,7 @@
 <div class="list-group-item clearfix"> 
     <div class="pull-left"> 
     <h4 class="list-group-item-heading">{{ course.name}}</h4> 
-    <p class="list-group-item-text">{{ course.description }}</p> 
+    <p class="list-group-item-text">{{ course.description | truncate:50 }}</p> 
     </div> 
     <span class="pull-right"> 
     <img 
