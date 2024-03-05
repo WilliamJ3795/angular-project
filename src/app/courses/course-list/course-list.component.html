@@ -5,7 +5,7 @@
 <div class="row"> 
 <div class="col-xs-12"> 
 <app-course-item 
-*ngFor="let courseEl of courses | filter: searchText let i = index" 
+*ngFor="let courseEl of courses | filter: searchText | orderBy: 'name'; let i = index" 
 (mouseenter)="setHoveredRow(i)" (mouseleave)="setHoveredRow(i)" 
 [class.active]="i == selectedRow" [course]="courseEl"> 
 </app-course-item> 
