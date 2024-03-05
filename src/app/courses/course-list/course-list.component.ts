@@ -33,4 +33,11 @@ export class CourseListComponent {
     'Vue.js features an incrementally adoptable architecture that focuses on declarative rendering and component composition. Advanced features required for complex applications such as routing, state management and build tooling are offered via officially maintained supporting libraries and packages.', 
     '/assets/vue.jpg',4) 
     ];
+    
+    getCourses() { 
+      return this.courses; 
+  }
+  ngOnInit() { 
+    this.getCourses(); 
+    }
 }
