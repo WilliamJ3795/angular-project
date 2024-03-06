@@ -10,7 +10,7 @@ import { Course } from '../course.model';
   styleUrls: ['./course-list.component.css']
 })
 export class CourseListComponent {
-  
+
   constructor(private router: Router,
     private route: ActivatedRoute) { 
     }
@@ -40,9 +40,6 @@ export class CourseListComponent {
     '/assets/vue.jpg',4) 
     ];
     
-    getCourses() { 
-      return this.courses; 
-  }
   ngOnInit() { 
     this.getCourses(); 
     }
