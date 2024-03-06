@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Course } from '../course.model'; 
 
 @Component({
