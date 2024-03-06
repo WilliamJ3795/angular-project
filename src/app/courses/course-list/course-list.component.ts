@@ -3,12 +3,17 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Course } from '../course.model';
 
 
+
 @Component({
   selector: 'app-course-list',
   templateUrl: './course-list.component.html',
   styleUrls: ['./course-list.component.css']
 })
 export class CourseListComponent {
+  
+  constructor(private router: Router,
+    private route: ActivatedRoute) { 
+    }
   courses: Course[] = [ 
     new Course('JavaScript', 
     'Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is an essential part of web applications.',
