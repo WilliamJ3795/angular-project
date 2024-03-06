@@ -12,6 +12,7 @@ import { CourseItemComponent } from './courses/course-list/course-item/course-it
 import { TruncatePipe } from './truncate.pipe';
 import { FilterPipe } from './filter.pipe';
 import { OrderByPipe } from './order-by.pipe';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { OrderByPipe } from './order-by.pipe';
     CourseItemComponent,
     TruncatePipe,
     FilterPipe,
-    OrderByPipe
+    OrderByPipe,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
