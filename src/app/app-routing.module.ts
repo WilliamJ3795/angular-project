@@ -8,8 +8,10 @@ import { CourseDetailComponent } from './courses/course-detail/course-detail.com
 const appRoutes: Routes = [
   { path: '', redirectTo: '/courses', pathMatch: 'full' }, 
   { path: 'contact', component: ContactComponent, pathMatch: 'full' }, 
-  { path: 'courses', component: CoursesComponent, children: [ 
-    
+  { path: 'courses', component: CoursesComponent, children: [
+    { path: '', component: CourseStartComponent }, 
+    { path: ':id', component: CourseDetailComponent } 
+
   ] }
 
 ];
