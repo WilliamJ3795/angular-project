@@ -9,7 +9,11 @@ import { Course } from '../course.model';
 })
 export class CourseDetailComponent {
   course!: Course;
-  id : number;
+  // id : number;
+  
+  getCourse(id: number) { 
+    return this.courses[id]; 
+    }
 
   constructor(private router: Router,
     private route: ActivatedRoute) { 
