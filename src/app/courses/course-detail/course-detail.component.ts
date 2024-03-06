@@ -9,7 +9,7 @@ import { Course } from '../course.model';
 })
 export class CourseDetailComponent {
   course!: Course;
-  id : number;
+  id! : number;
   
   getCourse(id: number) { 
     return this.courses[id]; 
@@ -29,7 +29,7 @@ export class CourseDetailComponent {
   constructor(private router: Router,
     private route: ActivatedRoute) { 
     }
-    
+
     courses: Course[] = [ 
       new Course('JavaScript', 
       'Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is an essential part of web applications.', '/assets/javascript.jpg', 0), 
