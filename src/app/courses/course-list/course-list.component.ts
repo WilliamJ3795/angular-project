@@ -40,9 +40,9 @@ export class CourseListComponent {
     '/assets/vue.jpg',4) 
     ];
     
-  ngOnInit() { 
-    this.getCourses(); 
-    }
+  // ngOnInit() { 
+  //   this.courses(); 
+  //   }
 
     selectedRow!: number;
     searchText!: string; 
