@@ -9,4 +9,8 @@ import { Course } from '../course.model';
 })
 export class CourseDetailComponent {
   course!: Course;
+
+  constructor(private router: Router,
+    private route: ActivatedRoute) { 
+    }
 }
