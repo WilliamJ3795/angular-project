@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
+import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  ngOnInit() {
+    this.signupForm = new FormGroup({ 
+      'userData': new FormGroup({ 
+      }), 
+    }
+    );  
+  }
+    signupForm!: FormGroup; 
 
 }
