@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Course } from '../../shared/course.model'; 
-import { CourseService } from '../../shared/course.service';
+import { CourseService } from '../../shared/course.service'; 
 
 @Component({
   selector: 'app-course-detail',
